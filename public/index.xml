@@ -39,5 +39,15 @@ What’s included  A home page (content/_index.md) Three pages (content/about.md
 3) Performance-friendly output Hugo generates fast static HTML with minimal overhead.</description>
     </item>
     
+    <item>
+      <title>Supporters</title>
+      <link>http://example.org/supporters/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/supporters/</guid>
+      <description>Thank you to everyone who supports this project.
+Amina B.Joined 2026-02-10Omar K.Joined 2026-02-10Sara M.Joined 2026-02-10 </description>
+    </item>
+    
   </channel>
 </rss>

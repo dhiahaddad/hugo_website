@@ -1,0 +1,14 @@
+{{- $supporters := site.Data.supporters -}}
+
+{{- if not $supporters -}}
+<p>No supporters yet.</p>
+{{- else -}}
+<ul class="supporters-list">
+  {{- range $supporters -}}
+    <li class="supporter">
+      <span class="supporter-name">{{ .name }}</span>
+      {{- with .joined -}}<span class="supporter-joined">Joined {{ . }}</span>{{- end -}}
+    </li>
+  {{- end -}}
+</ul>
+{{- end -}}

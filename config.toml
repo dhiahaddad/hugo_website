@@ -7,6 +7,10 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   description = "A small sample website built with Hugo."
+  # Set this to your form provider endpoint (e.g., Formspree/Getform/etc).
+  # If left empty, the form will render but the submit button will be disabled.
+  supporters_form_action = ""
+  supporters_form_method = "POST"
 
 [menu]
   [[menu.main]]
@@ -28,3 +32,8 @@ disableKinds = ["taxonomy", "term"]
     name = "Contact"
     pageRef = "/contact"
     weight = 4
+
+  [[menu.main]]
+    name = "Supporters"
+    pageRef = "/supporters"
+    weight = 5
