@@ -15,15 +15,34 @@ Then open the URL Hugo prints (usually `http://localhost:1313`).
 
 The home page includes a simple signup form (name + email). Because Hugo is static, you must point the form to a hosted form handler.
 
+### Switch form providers
+
+Set `params.supporters_form_provider` in `config.toml`:
+
+- `generic` (default): POSTs to any endpoint you provide
+- `formspree`: same as generic, but intended for Formspree
+- `netlify`: uses Netlify Forms (no action URL required)
+
+### Generic / Formspree
+
 1) Create a form endpoint with a provider (example: Formspree).
-2) Set the endpoint in `config.toml`:
+2) Set the provider + endpoint in `config.toml`:
 
 ```toml
 [params]
+supporters_form_provider = "formspree"
 supporters_form_action = "https://formspree.io/f/yourFormId"
 ```
 
 If `supporters_form_action` is empty, the form renders but the submit button is disabled.
+
+### Netlify Forms
+
+```toml
+[params]
+supporters_form_provider = "netlify"
+supporters_form_name = "supporters"
+```
 
 ## Showing an up-to-date supporters list
 

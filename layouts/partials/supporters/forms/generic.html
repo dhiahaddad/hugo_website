@@ -1,0 +1,17 @@
+{{- $action := (default "" .Site.Params.supporters_form_action) -}}
+{{- $method := (default "POST" .Site.Params.supporters_form_method) -}}
+{{- $enabled := ne $action "" -}}
+
+<form class="supporters-form" method="{{ $method }}" action="{{ $action }}">
+  {{- $notice := "" -}}
+  {{- if not $enabled -}}
+    {{- $notice = "Form is not configured yet. Set <strong>params.supporters_form_action</strong> in <code>config.toml</code>." -}}
+  {{- end -}}
+
+  {{ partial "supporters/forms/form-fields.html" (dict
+    "Page" .
+    "SubmitEnabled" $enabled
+    "Notice" $notice
+    "ButtonText" "Sign up"
+  ) }}
+</form>

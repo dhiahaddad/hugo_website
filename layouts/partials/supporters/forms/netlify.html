@@ -1,0 +1,16 @@
+{{- $name := (default "supporters" .Site.Params.supporters_form_name) -}}
+
+<form class="supporters-form" name="{{ $name }}" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="{{ $name }}" />
+
+  <div class="hidden">
+    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+  </div>
+
+  {{ partial "supporters/forms/form-fields.html" (dict
+    "Page" .
+    "SubmitEnabled" true
+    "Notice" ""
+    "ButtonText" "Sign up"
+  ) }}
+</form>

@@ -134,6 +134,10 @@ main {
   font-size: 0.95em;
 }
 
+.hidden {
+  display: none;
+}
+
 .content :is(h2, h3) {
   margin-top: 18px;
 }

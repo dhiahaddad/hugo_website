@@ -7,10 +7,19 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   description = "A small sample website built with Hugo."
-  # Set this to your form provider endpoint (e.g., Formspree/Getform/etc).
-  # If left empty, the form will render but the submit button will be disabled.
+  # Supporters form provider switching
+  # - "generic": uses supporters_form_action/method to POST to any endpoint
+  # - "formspree": same as generic, but documented as Formspree-friendly
+  # - "netlify": uses Netlify Forms (no action needed)
+  supporters_form_provider = "generic"
+
+  # Generic/Formspree settings
+  # If action is empty for providers that need it, the form renders but submit is disabled.
   supporters_form_action = ""
   supporters_form_method = "POST"
+
+  # Netlify Forms settings
+  supporters_form_name = "supporters"
 
 [menu]
   [[menu.main]]

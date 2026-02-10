@@ -61,35 +61,32 @@
 
   <section class="card supporters">
   <h2>Supporters</h2>
-  <p>Leave your email if you’d like updates.</p>
+  <p>Leave your email if you’d like updates.</p><form class="supporters-form" method="POST" action=""><div class="field">
+  <label for="supporter_name">Name</label>
+  <input id="supporter_name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+</div>
 
-  <form class="supporters-form" method="POST" action="">
-    <div class="field">
-      <label for="supporter_name">Name</label>
-      <input id="supporter_name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
-    </div>
+<div class="field">
+  <label for="supporter_email">Email</label>
+  <input id="supporter_email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+</div>
 
-    <div class="field">
-      <label for="supporter_email">Email</label>
-      <input id="supporter_email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
-    </div>
+<div class="field checkbox">
+  <label>
+    <input name="consent" type="checkbox" value="yes" required />
+    I agree to receive email updates.
+  </label>
+</div>
 
-    <div class="field checkbox">
-      <label>
-        <input name="consent" type="checkbox" value="yes" required />
-        I agree to receive email updates.
-      </label>
-    </div>
+<input type="hidden" name="source" value="hugo-sample-site" />
 
-    <input type="hidden" name="source" value="hugo-sample-site" />
 
-    
-      <p class="notice">
-        Form is not configured yet. Set <strong>params.supporters_form_action</strong> in <code>config.toml</code>.
-      </p>
-      <button class="button" type="submit" disabled>Sign up</button>
-    
-  </form>
+  <p class="notice">Form is not configured yet. Set <strong>params.supporters_form_action</strong> in <code>config.toml</code>.</p>
+
+
+<button class="button" type="submit" disabled>Sign up</button>
+
+</form>
 </section>
 
 
