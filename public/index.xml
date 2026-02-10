@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Sample Hugo Website</title>
+    <link>http://example.org/</link>
+    <description>Recent content in Home on Sample Hugo Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>Who this is for This sample site is for anyone who wants a minimal Hugo setup using Markdown content and a hand-rolled layout (no external theme required).
+What’s included  A home page (content/_index.md) Three pages (content/about.md, content/services.md, content/contact.md) A menu defined in hugo.toml  </description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://example.org/contact/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/contact/</guid>
+      <description>You can replace this with your real contact info.
+ Email: hello@example.org GitHub: https://github.com/example  If you want a contact form, you’d typically integrate a form backend (since Hugo is static).</description>
+    </item>
+    
+    <item>
+      <title>Services</title>
+      <link>http://example.org/services/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/services/</guid>
+      <description>Here are three example “services” sections to show typical Markdown formatting.
+1) Static site setup We can structure content into pages and keep navigation consistent.
+2) Content editing workflow Write in Markdown, preview locally, then deploy.
+3) Performance-friendly output Hugo generates fast static HTML with minimal overhead.</description>
+    </item>
+    
+  </channel>
+</rss>

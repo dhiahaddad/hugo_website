@@ -1,0 +1,74 @@
+:root {
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.site-header {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 14px 0;
+}
+
+.header-inner {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: inherit;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.menu-link.is-active {
+  background: #f2f2f2;
+}
+
+main {
+  padding: 24px 0;
+}
+
+.card {
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.content :is(h2, h3) {
+  margin-top: 18px;
+}
+
+.site-footer {
+  border-top: 1px solid #e6e6e6;
+  padding: 18px 0;
+  color: #444;
+}

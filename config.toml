@@ -1,0 +1,30 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Sample Hugo Website"
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "A small sample website built with Hugo."
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 2
+
+  [[menu.main]]
+    name = "Services"
+    pageRef = "/services"
+    weight = 3
+
+  [[menu.main]]
+    name = "Contact"
+    pageRef = "/contact"
+    weight = 4
